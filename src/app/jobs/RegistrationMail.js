@@ -6,7 +6,7 @@ export default {
         const {user} = data;
         await Mail.sendMail({
             subject: 'Primeiro teste',
-            from: 'Timóteo <timoteo.vieira@linkcariri.com>',
+            from: 'Sistema de notificação',
             to: `${user.name} <${user.email}>`,
             html: `${user.name}, bem vindo ao sistema de filas de email`
         })
